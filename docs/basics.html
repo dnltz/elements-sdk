@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Features &mdash; Elements SDK 1.0.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="General Tasks" href="tools.html" />
+    <link rel="prev" title="Welcome to Elements SDK" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Elements SDK
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Basic Information</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#vivado">Vivado</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#docker">Docker</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#custom-image">Custom Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#development">Development</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gui-support">GUI Support</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#support">Support</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#fpga-development-boards">FPGA Development Boards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pdks">PDKS</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">SDK Usage</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tools.html">General Tasks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html#fpga-flow">FPGA Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools.html#asic-flow">ASIC Flow</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer's Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="developer.html">Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer.html#system-on-chip">System on Chip</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer.html#board">Board</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer.html#kit">Kit</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Platforms</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="platforms.html">Hydrogen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platforms.html#helium">Helium</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Elements SDK</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Features</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/basics.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="features">
+<h1>Features<a class="headerlink" href="#features" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Open-Source FPGA flow</p></li>
+<li><p>Portfolio of configurable peripherals with OS support</p></li>
+<li><p>Predefined SOC platforms</p></li>
+<li><p>Integrated Operation Systems like Zephyr</p></li>
+<li><p>Toolchain files are generated automatically</p></li>
+<li><p>Nightly checks</p></li>
+</ul>
+<p>Focus on defining a custom SOC and writing your applcation!</p>
+</section>
+<section id="prerequisites">
+<h1>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline"></a></h1>
+<ul class="simple">
+<li><p>Linux host system (Ubuntu 20.04 recommended)</p></li>
+<li><p>Python 3 (python3.8-dev)</p></li>
+<li><p>Vivado for Xilinx platforms (optional)</p></li>
+<li><p>Cadence for digital silicons (optional)</p></li>
+</ul>
+</section>
+<section id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline"></a></h1>
+<ul>
+<li><p>Install required packages:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">ssh</span> <span class="n">git</span> <span class="n">curl</span> <span class="n">libtool</span><span class="o">-</span><span class="nb">bin</span> <span class="n">autotools</span><span class="o">-</span><span class="n">dev</span> <span class="n">automake</span> <span class="n">pkg</span><span class="o">-</span><span class="n">config</span> <span class="n">libyaml</span><span class="o">-</span><span class="n">dev</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">libssl</span><span class="o">-</span><span class="n">dev</span> <span class="n">gdb</span> <span class="n">ninja</span><span class="o">-</span><span class="n">build</span> <span class="n">flex</span> <span class="n">bison</span> <span class="n">libfl</span><span class="o">-</span><span class="n">dev</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">python3</span> <span class="n">python3</span><span class="o">.</span><span class="mi">8</span><span class="o">-</span><span class="n">dev</span> <span class="n">python3</span><span class="o">-</span><span class="n">pip</span> <span class="n">virtualenv</span> <span class="n">openjdk</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="n">jdk</span><span class="o">-</span><span class="n">headless</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">verilator</span> <span class="n">gtkwave</span> <span class="n">libcanberra</span><span class="o">-</span><span class="n">gtk</span><span class="o">-</span><span class="n">module</span> <span class="n">libcanberra</span><span class="o">-</span><span class="n">gtk3</span><span class="o">-</span><span class="n">module</span>
+<span class="n">sudo</span> <span class="n">apt</span> <span class="n">install</span> <span class="n">libtinfo5</span> <span class="n">libncurses5</span>
+</pre></div>
+</div>
+</li>
+<li><p>Download the repository and checkout the latest release:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">aesc</span><span class="o">-</span><span class="n">silicon</span><span class="o">/</span><span class="n">elements</span><span class="o">-</span><span class="n">sdk</span><span class="o">.</span><span class="n">git</span>
+<span class="n">cd</span> <span class="n">elements</span><span class="o">-</span><span class="n">sdk</span><span class="o">/</span>
+<span class="n">git</span> <span class="n">checkout</span> <span class="n">v22</span><span class="o">.</span><span class="mi">1</span>
+</pre></div>
+</div>
+</li>
+<li><p>Create a virtualenv:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">virtualenv</span> <span class="o">-</span><span class="n">p</span> <span class="n">python3</span> <span class="n">venv</span>
+</pre></div>
+</div>
+</li>
+<li><p>Install required packages for elements:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span> <span class="n">venv</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">activate</span> <span class="o">&amp;&amp;</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">pyyaml</span> <span class="n">packaging</span>
+</pre></div>
+</div>
+</li>
+<li><p>Initialise the SDK:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="n">elements</span><span class="o">.</span><span class="n">py</span> <span class="n">init</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<section id="vivado">
+<h2>Vivado<a class="headerlink" href="#vivado" title="Permalink to this headline"></a></h2>
+<p>The Vivado toolchain is not part of this SDK and needs to be installed separately for Xilinx
+platforms from <a class="reference external" href="https://www.xilinx.com/support/download.html">Xilinx’s homepage</a>. Download the Linux Self Extracting Web Installer for Version
+2020.2 and install it. Select Vivado as product and Vivado HL WebPACK as Edition. You can use this
+edition’s license for free, if you do not sell the bitsream, and disable everything except the
+Artix-7 Platform to save disk storage. Elements excepts to find the Vivado toolchain under
+<code class="docutils literal notranslate"><span class="pre">/opt/xilinx</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>chmod +x ~/Downloads/Xilinx_Unified_2020.2_1118_1232_Lin64.bin
+~/Downloads/Xilinx_Unified_2020.2_1118_1232_Lin64.bin
+</pre></div>
+</div>
+</section>
+</section>
+<section id="docker">
+<h1>Docker<a class="headerlink" href="#docker" title="Permalink to this headline"></a></h1>
+<p>The Elements SDK supports to run inside Docker. Currently, only self-build images can be used
+due a lack of uploading pre-build images.</p>
+<section id="custom-image">
+<h2>Custom Image<a class="headerlink" href="#custom-image" title="Permalink to this headline"></a></h2>
+<p>A Docker Compose configuration is provided for systems which do not run with the recommended
+versions. The Docker will have included all required packages for the SDK, expect vendor toolchains.
+Build the image (which can take some minutes).</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker-compose build
+</pre></div>
+</div>
+<p>Next, start the Docker in the background.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker-compose up -d
+</pre></div>
+</div>
+<p>Afterwards, all Python tools can be used identical to the CLI.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>sudo docker exec -it elements_sdk_1 \
+    ./elements-fpga.py Hydrogen1 Nexys4-DDR build zephyr-samples/demo/leds \
+    --toolchain symbiflow
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Add <code class="docutils literal notranslate"><span class="pre">--toolchain</span> <span class="pre">symbiflow</span></code> as parameter for the synthesize command to use the open-source
+toolchain.</p>
+</div>
+<p>Finally, stop the Docker.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docker-compose stop
+</pre></div>
+</div>
+</section>
+<section id="development">
+<h2>Development<a class="headerlink" href="#development" title="Permalink to this headline"></a></h2>
+<p>The docker image can also be used to develop. Therefore, the repos on the host system should be
+forwarded to the container to make all changes public. Open the <code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code> file and
+uncomment the lines in <code class="docutils literal notranslate"><span class="pre">volumnes</span></code> which should be made public.</p>
+</section>
+<section id="gui-support">
+<h2>GUI Support<a class="headerlink" href="#gui-support" title="Permalink to this headline"></a></h2>
+<p>Some GUI applications require access to the host system’s X server. Run the following command in
+the host shell to grant them.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>xhost local:root
+</pre></div>
+</div>
+</section>
+</section>
+<section id="support">
+<h1>Support<a class="headerlink" href="#support" title="Permalink to this headline"></a></h1>
+<section id="fpga-development-boards">
+<h2>FPGA Development Boards<a class="headerlink" href="#fpga-development-boards" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 31%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Board</p></th>
+<th class="head"><p>Vendor</p></th>
+<th class="head"><p>FPGA Chip</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Nexys4-DDR</p></td>
+<td><p>Digilent</p></td>
+<td><p>Artix-7</p></td>
+</tr>
+<tr class="row-odd"><td><p>AX7101</p></td>
+<td><p>Alinx</p></td>
+<td><p>Artix-7</p></td>
+</tr>
+<tr class="row-even"><td><p>AX7035</p></td>
+<td><p>Alinx</p></td>
+<td><p>Artix-7</p></td>
+</tr>
+<tr class="row-odd"><td><p>DH-006</p></td>
+<td><p>Phytec</p></td>
+<td><p>Artix-7</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="pdks">
+<h2>PDKS<a class="headerlink" href="#pdks" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 52%" />
+<col style="width: 48%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Foundary</p></th>
+<th class="head"><p>PDK</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>IHP</p></td>
+<td><p>SG13S</p></td>
+</tr>
+<tr class="row-odd"><td><p>IHP</p></td>
+<td><p>SG13S2</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Elements SDK" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tools.html" class="btn btn-neutral float-right" title="General Tasks" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2020, PHYTEC Messtechnik GmbH.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
